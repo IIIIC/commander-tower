@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Commander Tower – Trade invitation</title>
+    <meta property="og:title" content="Commander Tower – Trade invitation" />
+    <meta property="og:description" content="You have been invited to a card trade. Open the invitation in the app." />
+    <meta name="robots" content="noindex" />
+    <meta name="theme-color" content="#18181B" />
+    <link rel="icon" href="../favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body data-kind="trade">
+    <main class="center">
+      <img class="logo" src="../icon.png" alt="" width="84" height="84" />
+      <p class="eyebrow">Commander Tower</p>
+      <div id="valid">
+        <h1>You have been invited to a card trade</h1>
+        <p>Te han invitado a un intercambio de cartas · T'han convidat a un intercanvi de cartes</p>
+        <div class="card">
+          <a id="open" class="button" href="#">Open in Commander Tower</a>
+          <a class="button secondary" href="https://play.google.com/store/apps/details?id=app.commandertower.mobile">
+            Get the app on Google Play
+          </a>
+          <p class="small">
+            If the button does not open the app, copy this page's address, open Commander Tower, go to Groups → Join a
+            group and paste it there.
+          </p>
+          <p class="small"><code id="code"></code></p>
+        </div>
+      </div>
+      <div id="invalid" hidden>
+        <h1>This invitation link is not valid</h1>
+        <p>Ask for a new invitation. · Pide una invitación nueva. · Demana una invitació nova.</p>
+      </div>
+    </main>
+    <script src="../invite.js"></script>
+  </body>
+</html>
