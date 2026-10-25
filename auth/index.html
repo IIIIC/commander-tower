@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Commander Tower – Account</title>
+    <meta name="robots" content="noindex" />
+    <meta name="theme-color" content="#18181B" />
+    <link rel="icon" href="../favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <main class="center">
+      <img class="logo" src="../icon.png" alt="" width="84" height="84" />
+      <p class="eyebrow">Commander Tower</p>
+
+      <!-- Correu confirmat -->
+      <div id="confirmed" hidden>
+        <h1>Your account is confirmed</h1>
+        <p>Compte confirmat · Cuenta confirmada · Compte confirmé</p>
+        <div class="card">
+          <a id="open-confirmed" class="button" href="#">Open Commander Tower</a>
+          <p class="small">
+            You can now sign in with your email and password, in the app or on the web. ·
+            Ja pots entrar amb el teu correu i contrasenya. · Ya puedes entrar con tu correo y contraseña.
+          </p>
+        </div>
+      </div>
+
+      <!-- Contrasenya nova -->
+      <div id="reset" hidden>
+        <h1>Choose a new password</h1>
+        <p>Tria una contrasenya nova · Elige una contraseña nueva</p>
+        <div class="card">
+          <a id="open-reset" class="button" href="#">Open Commander Tower</a>
+          <p class="small">
+            Open this link on the phone where you asked for it: the app will ask for your new password. ·
+            Obre aquest enllaç al mòbil des d'on ho has demanat. · Abre este enlace en el móvil desde donde lo pediste.
+          </p>
+        </div>
+      </div>
+
+      <!-- Enllaç caducat o ja fet servir -->
+      <div id="failed" hidden>
+        <h1>This link is no longer valid</h1>
+        <p>Aquest enllaç ja no és vàlid · Este enlace ya no es válido</p>
+        <p class="small">
+          It may have expired or been used already. If your account is already confirmed, just sign in; if not, ask the
+          app to send you a new email. · Pot haver caducat o ja s'ha fet servir: si el compte ja està confirmat, entra;
+          si no, demana a l'app un correu nou.
+        </p>
+      </div>
+    </main>
+    <script src="../auth.js"></script>
+  </body>
+</html>
